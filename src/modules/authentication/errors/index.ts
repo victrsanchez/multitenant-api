@@ -1,0 +1,11 @@
+export { IncorrectCodeError } from './incorrect-code.error';
+export { InvalidPasswordError } from './invalid-password.error';
+export { ExistingPasswordError } from './password-already-exists.error';
+export { UserAlreadyExistsError } from './user-already-exists.error';
+export { UserNotConfirmedError } from './user-not-confirmed.error';
+export { MaxNumAttemptsExceededError } from './max-numbers-attempts-exceeded';
+export { SmsExpiredError } from './sms-expired.error';
+export { MustWaitBeforeResendError } from './must-wait-before-resend.error';
+export { AccountAlreadyVerifiedError } from './account-already-verified.error';
+export { InvalidSmsTypeError } from './invalid-sms-type.error';
+export { PasswordIsNotSetError } from './password-not-set.error';
