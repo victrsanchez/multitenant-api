@@ -4,7 +4,7 @@ import { CreateUserDto, GetUserDto } from './dto';
 
 @Controller('users')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly userService: UserService) { }
 
   @Get()
   async findAll(): Promise<GetUserDto[]> {
@@ -12,7 +12,7 @@ export class UserController {
   }
 
   @Post()
-  async create(@Body() user: CreateUserDto): Promise<GetUserDto> {
-    return this.userService.createUser(user);
+  async create(@Body() user: CreateUserDto): Promise<null> {
+    return null;//return this.userService.createUser(user);
   }
 }
